@@ -1,0 +1,76 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #121212;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.gauge-container {
+  position: relative;
+  width: 300;
+  height: 200;
+  background-color: #121212;
+}
+
+.label {
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+}
+
+.label-0 {
+  top: 80%;
+  left: 10%;
+}
+
+.label-25 {
+  top: 50%;
+  left: 25%;
+}
+
+.label-50 {
+  top: 35%;
+  left: 50%;
+}
+
+.label-75 {
+  top: 50%;
+  left: 70%;
+}
+
+.label-100 {
+  top: 80%;
+  left: 80%;
+}
+
+.needle {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 16px solid #ffffff;
+  transform-origin: center bottom;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7));
+  transition: transform 1.5s; /* Add transition effect */
+}
+
+.update-button {
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
